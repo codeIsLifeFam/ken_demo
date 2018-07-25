@@ -1,0 +1,18 @@
+.example-component {
+background-color: #8693ab;
+}
+.example-component-change {
+ background-color: #272727;
+ transition:1s;
+}
+.Landing{
+    height: 100vh;
+}
+.Landing_logo{
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top:50%;
+    padding: 0;
+    margin:0;
+}

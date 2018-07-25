@@ -1,0 +1,36 @@
+.Home{
+height: auto;
+padding: 0;
+}
+.Home > div > h1{
+    margin:0;
+}
+.Home > div{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.Home > div > h1{
+    width:50%;
+    position: relative;
+    top: 40%;
+}
+.Home > div > article{
+    width:50%;
+    padding:20px 100px;
+    position: relative;
+    top: 35%;
+}
+.Home_el-1{
+  background-color: #bdd4e7;
+}
+.Home_el-2{
+    background-color: #8693ab;
+    color: white;
+
+}
+.Home_el-3{
+    background-color: #f7f7f2;
+
+}

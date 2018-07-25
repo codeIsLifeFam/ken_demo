@@ -1,0 +1,21 @@
+.Nav_links > a{
+    text-decoration-style: none;
+   color:white;
+   margin-right: 15px;
+   position: relative;
+   top:100px;
+}
+.Nav_header{
+    position: relative;
+    top:50%;
+    margin-left: 10%;
+    color: white;
+    text-align: left;
+
+}
+.Nav_header h1{
+    font-size: 64px;
+}
+.Nav_header h3{
+    font-weight:lighter;
+}
