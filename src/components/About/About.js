@@ -6,20 +6,21 @@ class About extends React.Component{
             <div className="About">
                  <div className="About_el-1">
               <h1 className="somecoolheader">
-                 SOME COOL HEADER
+                 Cool Roofing
                  </h1>
-                 <article>  some cool content goes here blah blah The Center for Information Industry Development (CCID), under China’s Ministry of Industry and Information Technology, officially released its third crypto project ranking last week. The new list consists of 31 crypto projects.The center began ranking 28 crypto projects in May. The following month it added 2 more projects: EOS and Nebulas. This month, one more is added, making a total of 31 crypto projects on the list. Gxchain is the latest addition.</article>
+                 <article>  A properly installed reflective roof system will help you reduce electricity bills by reducing the amount of heat that penetrates your building envelope, and it also increases longevity by reducing thermal shock that shortens a roof’s lifespan.
+</article>
              </div>
              <div className="About_el-2">
               <h1 className="somecoolheader">
-             SOME COOL HEADER
+             Low-Slope Roofing Applications
                  </h1>
-                 <article>  some cool content goes here blah blah The Center for Information Industry Development (CCID), under China’s Ministry of Industry and Information Technology, officially released its third crypto project ranking last week. The new list consists of 31 crypto projects.The center began ranking 28 crypto projects in May. The following month it added 2 more projects: EOS and Nebulas. This month, one more is added, making a total of 31 crypto projects on the list. Gxchain is the latest addition.</article>
+                 <article> Crest Exteriors offers our clients the very best in low-slope roofing options. Whether on your home, office, or commercial building, we offer multiple options for the complexities that come with a low-slope roof.</article>
              </div>
              <div className="About_el-3">
-             <h1 className="somecoolheader">SOME COOL HEADER
+             <h1 className="somecoolheader">Commercial Roof Leak Repairs
                  </h1>
-                 <article>  some cool content goes here blah blah The Center for Information Industry Development (CCID), under China’s Ministry of Industry and Information Technology, officially released its third crypto project ranking last week. The new list consists of 31 crypto projects.The center began ranking 28 crypto projects in May. The following month it added 2 more projects: EOS and Nebulas. This month, one more is added, making a total of 31 crypto projects on the list. Gxchain is the latest addition.</article>
+                 <article> Finding leaks and repairing leaks properly on a commercial property roof is almost an art. A leaking low-slope roof shows signs of leaks that can fool some roofing contractors into repairing the wrong areas. At Crest Exteriors, we have the experience to find the point that water is coming in through the roof, even if it is running laterally under the membrane. Call us today for all of your commercial roofing needs and we’ll get to work for you right away. </article>
              </div>
             </div>
         )
