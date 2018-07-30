@@ -1,0 +1,11 @@
+.Footer{
+    background-color:#141d29;
+    color:#828282;
+    padding:5vw;
+
+}
+.Footer_links > a{
+    text-decoration-style: none;
+    color:#828282;
+    padding: 4px;
+}
