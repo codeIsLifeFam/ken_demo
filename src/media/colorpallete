@@ -1,13 +1,6 @@
-#8693ab skygrey
+#141d29   dark navy blue/ more blue then black
+#f7f7f7   light gray
+#0749be   light toned blue
 
-#bdd4e7 milkblue
-
-#272727 darkgrey
-
-#2a0c4e navy
-
-#f7f7f2 creamwhite
-
-
-after the integration with sass make this file as _var.scss file
-
+#1b1f25    ark blue navy/more black then blue
+#ffffff     white
