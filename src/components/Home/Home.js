@@ -5,7 +5,11 @@ class Home extends React.Component {
     return (
       <div className="Home">
         <div className="Home_el-1 Home_el">
-          <h1 className="somecoolheader">A New Roof is NOT Something to Gamble With</h1>
+        <header>
+          <h1>A New Roof is NOT Something to Gamble With</h1>
+          <h3>sub header goes underneath</h3>
+          <hr/>
+          </header>
           <article>
             {" "}
             
@@ -20,10 +24,18 @@ When it comes time to repair or replace your commercial roofing system, you want
 When your commercial roof needs to be repaired, you need to hire someone who has experience with the complexities of commercial roofing. Not all roofers are the same, and hiring an inexperienced roofer to complete your commercial project is playing with fire…sometimes literally. A commercial roofer needs to be highly trained so that you don’t have to replace your roof again prematurely.
 
           </article>
-          <h1 className="somecoolheader">Not All Roofers are the Right Roofers</h1>{" "}
+          <header>
+          <h1>Not All Roofers are the Right Roofers</h1>
+          <h3>sub header goes underneath</h3>
+          <hr/>
+          </header>
         </div>
         <div className="Home_el-3 Home_el">
-          <h1 className="somecoolheader">Knowing when to Replace Your Roof</h1>
+        <header>
+          <h1>Knowing when to Replace Your Roof</h1>
+          <h3>sub header goes underneath</h3>
+          <hr/>
+          </header>
           <article>
             {" "}
            A solid roof above your head is pretty crucial if you have become accustomed to having a warm, cozy, and leak free home or business. You need to change your roof if it is over 20 years old, the shingle sare curling, missing, cracked, or covered with moss or algae.

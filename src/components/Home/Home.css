@@ -1,15 +1,19 @@
 .Home{
 }
-.Home > div > h1{
+.Home > div > h1,h3{
     margin:0;
 }
 .Home > div{
     display: flex;
     flex-direction: row;
 }
-.Home > div > h1{
+.Home > div > header{
     width:40vw;
     padding:5vw;
+}
+.Home>div>header>h3{
+    color:#828282;
+    font-family: "Roboto Condensed",sans-serif;
 }
 .Home > div > article{
     width:40vw;
