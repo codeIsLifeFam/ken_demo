@@ -22,7 +22,7 @@ class Nav extends React.Component {
             <div className="Nav" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', height: '100vh',transition:'0.5s' }}>
                <div className="Nav_links">
                 <Link to="/home" Component={Home} onClick={()=>this.changeBg(mainbg)}>Home</Link>
-                <Link to="/about" Component={About} onClick={()=>this.changeBg(bg_about)}>About</Link>
+                <Link to="/about" Component={About} onClick={()=>this.changeBg(bg_about)}>About Us</Link>
                 <Link to="/contact" Component={Contact} onClick={()=>this.changeBg(bg_contact)}>Contact</Link>
                 <Link to="/works" Component={Works} onClick={()=>this.changeBg(bg_team)}>Our works</Link>
                 </div>

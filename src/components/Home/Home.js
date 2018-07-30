@@ -4,7 +4,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="Home">
-        <div className="Home_el-1">
+        <div className="Home_el-1 Home_el">
           <h1 className="somecoolheader">A New Roof is NOT Something to Gamble With</h1>
           <article>
             {" "}
@@ -13,7 +13,7 @@ When it comes time to repair or replace your commercial roofing system, you want
 
           </article>
         </div>
-        <div className="Home_el-2">
+        <div className="Home_el-2 Home_el">
           <article>
             {" "}
             
@@ -22,7 +22,7 @@ When your commercial roof needs to be repaired, you need to hire someone who has
           </article>
           <h1 className="somecoolheader">Not All Roofers are the Right Roofers</h1>{" "}
         </div>
-        <div className="Home_el-3">
+        <div className="Home_el-3 Home_el">
           <h1 className="somecoolheader">Knowing when to Replace Your Roof</h1>
           <article>
             {" "}

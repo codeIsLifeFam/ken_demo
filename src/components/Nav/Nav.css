@@ -14,8 +14,9 @@
 
 }
 .Nav_header h1{
-    font-size: 64px;
+    font-size: 40px;
 }
 .Nav_header h3{
-    font-weight:lighter;
+    font-family:Roboto Condensed, sans-serif;
+    color: #828282;
 }

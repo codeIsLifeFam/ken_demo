@@ -1,36 +1,44 @@
 .Home{
-height: auto;
-padding: 0;
 }
 .Home > div > h1{
     margin:0;
 }
 .Home > div{
-    height: 500px;
     display: flex;
     flex-direction: row;
-    width: 100%;
 }
 .Home > div > h1{
-    width:50%;
-    position: relative;
-    top: 40%;
+    width:40vw;
+    padding:5vw;
 }
 .Home > div > article{
-    width:50%;
-    padding:20px 100px;
-    position: relative;
-    top: 35%;
+    width:40vw;
+    padding:5vw;
+    color :#828282;
+    font-family: Rasa,sans-serif;
 }
 .Home_el-1{
-  background-color: #bdd4e7;
+  background-color:#1b1f25;
+  color: white;
 }
 .Home_el-2{
-    background-color: #8693ab;
-    color: white;
-
+  color : #1b1f25;
 }
 .Home_el-3{
-    background-color: #f7f7f2;
+    background-color:#f7f7f7;
+
+}
+
+@media only screen and (max-width: 700px)  {
+ .Home .Home_el{
+     display: flex;
+     flex-direction: column;
+ }
+ .Home > div > h1{
+    width:100%;
+}
+.Home > div > article{
+    width:100%;
+}
 
 }
