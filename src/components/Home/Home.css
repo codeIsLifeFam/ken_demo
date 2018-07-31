@@ -2,6 +2,7 @@
 }
 .Home > div > h1,h3{
     margin:0;
+ 
 }
 .Home > div{
     display: flex;
@@ -27,11 +28,16 @@
   background-color:#1b1f25;
   color: white;
 }
+.Home_el-1 h1{
+    -webkit-animation: fade-in-top 0.8s ease-in-out both;
+    animation: fade-in-top 0.8s ease-in-out both;
+}
 .Home_el-2{
   color : #1b1f25;
 }
 .Home_el-2 > article >h2{
-    color:#1b1f25
+    color:#1b1f25;
+
 }
 .Home_el-2>article> ul>li{
 list-style: none;
@@ -59,3 +65,29 @@ list-style: none;
 }
 
 }
+
+ @-webkit-keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import {withRouter} from "react-router"
+import logo from "../..//media/images/logo.png"
 // import PropTypes from "prop-types"
 import "./Landing.css"
 class Landing extends Component{
@@ -11,8 +12,8 @@ class Landing extends Component{
  }
 
   componentDidMount = () => {
-    this.timer = setInterval(this.goHome, 3000)
-    this.transitionTimer = setInterval(this.transition ,1000)
+    this.timer = setInterval(this.goHome, 1200)
+    this.transitionTimer = setInterval(this.transition ,600)
     console.log(this.state.show)
   }
   componentWillUnmount = () => {
@@ -29,10 +30,10 @@ class Landing extends Component{
     change && this.compClassName.push('change')
     return (
       <div className={`Landing ${this.compClassName.join('-')}`}>
-      <h1 className="Landing_logo">
-      Some logos here
-      <CircularProgress style={{ color:'white' }} thickness={7} />
-      </h1>
+      <span>
+      <img className="Landing_logo" src={logo} alt="alt" width="150"/>
+      <CircularProgress className="Landing_logo-cir" style={{ color:'white',opacity:"0.4" }} size={100}/>
+      </span>
         </div>
     )
   }

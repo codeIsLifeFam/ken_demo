@@ -4,3 +4,7 @@ padding:10vw;
 .Team_profile-container>img{
 margin:8px;
 }
+.Team_profile-container>img:hover{
+    background-color: black;
+    }
+    

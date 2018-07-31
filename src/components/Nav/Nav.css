@@ -31,6 +31,8 @@ left:10vw;
 
 .Nav_header h1{
     font-size: 32px;
+    -webkit-animation: fade-in-top 0.8s ease-in-out both;
+    animation: fade-in-top 0.8s ease-in-out both;
 }
 .Nav_header h3{
     font-family:Roboto Condensed, sans-serif;

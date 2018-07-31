@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import mainbg from "../../media/images/mainbg.jpg";
 import bg_about from "../../media/images/bg_about.jpg";
-import bg_contact from "../../media/images/bg-contact.jpg";
+import bg_contact from "../../media/images/bg_contact.jpg";
 import bg_team from "../../media/images/bg_team.jpg";
 import logo from "../../media/images/logo.png";
+import bg_work from "../../media/images/bg_work.jpg"
 import "./Nav.css";
 
 class Nav extends React.Component {
@@ -28,7 +29,8 @@ class Nav extends React.Component {
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
-          height: "100vh"
+          height: "100vh",
+          transition:"0.5s"
         }}
       >
         <div className="Nav">
@@ -53,14 +55,14 @@ class Nav extends React.Component {
 
             <Link
               to="/works"
-              onClick={() => this.changeBg(bg_team, 4)}
+              onClick={() => this.changeBg(bg_work, 4)}
               style={contentPage === 4 ? styles.link : null}
             >
               Our works
             </Link>
             <Link
               to="/team"
-              onClick={() => this.changeBg(mainbg, 5)}
+              onClick={() => this.changeBg(bg_team, 5)}
               style={contentPage === 5 ? styles.link : null}
             >
               Our Team
