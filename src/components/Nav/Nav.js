@@ -50,19 +50,27 @@ class Nav extends React.Component {
             >
               About Us
             </Link>
-            <Link
-              to="/contact"
-              onClick={() => this.changeBg(bg_contact, 3)}
-              style={contentPage === 3 ? styles.link : null}
-            >
-              Contact
-            </Link>
+
             <Link
               to="/works"
               onClick={() => this.changeBg(bg_team, 4)}
               style={contentPage === 4 ? styles.link : null}
             >
               Our works
+            </Link>
+            <Link
+              to="/team"
+              onClick={() => this.changeBg(mainbg, 5)}
+              style={contentPage === 5 ? styles.link : null}
+            >
+              Our Team
+            </Link>
+            <Link
+              to="/contact"
+              onClick={() => this.changeBg(bg_contact, 3)}
+              style={contentPage === 3 ? styles.link : null}
+            >
+              Contact
             </Link>
           </div>
           <div className="Nav_header">
@@ -86,6 +94,14 @@ class Nav extends React.Component {
                   Hola my friend, full satisfaction with just one bite
                   guaranteed
                 </h3>
+              </div>
+            ) : contentPage === 5 ? (
+              <div className="Nav_header5">
+                <h3>Team</h3>{" "}
+                <h1>
+                  A team of dedicated professionals committed to exceeding your
+                  expectations
+                </h1>
               </div>
             ) : (
               <div style={{ marginLeft: "10%" }}>
