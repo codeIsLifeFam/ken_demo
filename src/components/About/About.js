@@ -1,29 +1,58 @@
 import React from "react";
-class About extends React.Component{
-
-    render(){
-        return(
-            <div className="About">
-                 <div className="About_el-1">
-              <h1 className="somecoolheader">
-                 Cool Roofing
-                 </h1>
-                 <article>  A properly installed reflective roof system will help you reduce electricity bills by reducing the amount of heat that penetrates your building envelope, and it also increases longevity by reducing thermal shock that shortens a roof’s lifespan.
-</article>
-             </div>
-             <div className="About_el-2">
-              <h1 className="somecoolheader">
-             Low-Slope Roofing Applications
-                 </h1>
-                 <article> Crest Exteriors offers our clients the very best in low-slope roofing options. Whether on your home, office, or commercial building, we offer multiple options for the complexities that come with a low-slope roof.</article>
-             </div>
-             <div className="About_el-3">
-             <h1 className="somecoolheader">Commercial Roof Leak Repairs
-                 </h1>
-                 <article> Finding leaks and repairing leaks properly on a commercial property roof is almost an art. A leaking low-slope roof shows signs of leaks that can fool some roofing contractors into repairing the wrong areas. At Crest Exteriors, we have the experience to find the point that water is coming in through the roof, even if it is running laterally under the membrane. Call us today for all of your commercial roofing needs and we’ll get to work for you right away. </article>
-             </div>
-            </div>
-        )
-    }
+import { Link } from "react-router-dom";
+import "./About.css";
+class About extends React.Component {
+  render() {
+    return (
+      <div className="About">
+        <div className="About_el-1">
+          <h2>
+            We believe that lending to mid-sized businesses is a compelling way
+            to invest
+          </h2>
+          <article>
+            We view middle market credit as a core part of a balanced investment
+            portfolio. We created Varagon to provide direct exposure to quality
+            loans with best-in-class underwriting and portfolio management. Our
+            business was built on the belief that lenders that lead and
+            structure transactions are able to originate the most attractive
+            investments.
+          </article>
+          <h2>
+            Varagon was created to be a long-term provider of capital to the
+            middle market
+          </h2>
+          <article>
+            We offer complete, ‘one-stop’ financing solutions and are a
+            preferred lender to leading private equity firms. Our loans are
+            funded by capital commitments from long-term institutional
+            investors.
+          </article>
+        </div>
+        <div className="About_el-2">
+          <span>$4.5B+</span>
+          <h1>Over $4.5 billion investment portfolio</h1>
+        </div>
+        <hr />
+        <div className="About_el-3">
+          <h2>
+            Investment products that meet the needs of institutional investors
+          </h2>
+          <hr />
+          <Link to="/team">Learn more</Link>
+        </div>
+        <div className="About_el-4">
+          <span>
+            <span>20+ years</span>
+            <h3>Average middle market experience of leadership team</h3>
+          </span>
+          <span className="About_el-4_sec">
+            <span>45+</span>
+            <h3>Employees</h3>
+          </span>
+        </div>
+      </div>
+    );
+  }
 }
 export default About;

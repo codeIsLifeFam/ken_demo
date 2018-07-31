@@ -5,7 +5,7 @@ import Home from "../components/Home/Home"
 import About from "../components/About/About"
 import Contact from "../components/Contact/Contact"
 import Works from "../components/Works/Works"
-
+import Team from "../components/Team/Team"
 export default (
   <Switch>
     <Route  exact path="/" component={Landing} />
@@ -13,6 +13,6 @@ export default (
     <Route path ="/about" component={About} />
     <Route path ="/works" component={Works} />
     <Route path ="/contact" component={Contact} />
-    
+    <Route path ="/team" component={Team} />
   </Switch>
 );

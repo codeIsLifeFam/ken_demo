@@ -1,0 +1,53 @@
+.About_el-1{
+  background-color: #f7f7f7;
+}
+
+.About_el-2{
+    display: flex;
+}
+.About_el-2 > span{
+  color: #0749be;
+  font-size: 100px;
+  width:50%;
+}
+.About_el-2 > h1{
+    width:50%;
+}
+.About_el-3{
+  text-align: center;
+ 
+}
+.About_el-3 > a{
+    text-decoration: none;
+    color: blue;
+}
+.About_el-4{
+    display: flex;
+}
+.About_el-4 > span {
+    width:50%;
+    padding:3vw;
+    color:#0749be;
+}
+.About_el-4 > span>span{
+    font-size: 100px;
+    line-height: 70%;
+}
+.About_el-4 > span > h3{
+    margin-top:30px;
+}
+.About_el-4_sec{
+   text-align: center;
+}
+.About > div{
+  padding:15vw;
+  font-family: Rasa, sans-serif;
+  font-size:1.2em;
+  color:#828282
+}
+.About > div > h1,h3,h2{
+    font-family: Lora, sans-serif;
+    font-weight:lighter;
+    color:black;
+}
+

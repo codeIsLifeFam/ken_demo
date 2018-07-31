@@ -6,9 +6,10 @@
 .Home > div{
     display: flex;
     flex-direction: row;
-}
+    padding:15vw 10vw;
+}   
 .Home > div > header{
-    width:40vw;
+    width:50%;
     padding:5vw;
 }
 .Home>div>header>h3{
@@ -16,9 +17,10 @@
     font-family: "Roboto Condensed",sans-serif;
 }
 .Home > div > article{
-    width:40vw;
+    width:50%;
     padding:5vw;
     color :#828282;
+    font-size: 1.2em;
     font-family: Rasa,sans-serif;
 }
 .Home_el-1{
@@ -28,17 +30,28 @@
 .Home_el-2{
   color : #1b1f25;
 }
+.Home_el-2 > article >h2{
+    color:#1b1f25
+}
+.Home_el-2>article> ul>li{
+list-style: none;
+}
+.Home_el-2>article> ul > li> span{
+    color : #1b1f25;
+    font-size: 1.5em;
+    padding-right:1vw;
+}
+
 .Home_el-3{
     background-color:#f7f7f7;
-
 }
 
 @media only screen and (max-width: 700px)  {
- .Home .Home_el{
+ .Home> div{
      display: flex;
      flex-direction: column;
  }
- .Home > div > h1{
+ .Home > div > header{
     width:100%;
 }
 .Home > div > article{
