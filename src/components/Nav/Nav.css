@@ -24,11 +24,11 @@ left:10vw;
     color: white;
     text-align: left;
 }
-.Nav_header2{
-    text-align: center;
+.Nav_header2,.Nav_header3{
     margin:0 auto;
     width: 48%;
 }
+
 .Nav_header h1{
     font-size: 32px;
 }
