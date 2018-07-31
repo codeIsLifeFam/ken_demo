@@ -1,22 +1,45 @@
 .Nav_links > a{
-    text-decoration-style: none;
-   color:white;
+    text-decoration: none;
+    font-size: 1.15em;
+    letter-spacing: 1px;
+   color:#828282;
+   font-family: Roboto Condensed, sans-serif;
    margin-right: 15px;
    position: relative;
    top:100px;
 }
+.Nav_links > a:hover{
+    color:white;
+    transition:0.8s;
+}
+.Nav_logo{
+display: inline-block;
+position: absolute;
+top:6vw;
+left:10vw;
+}
 .Nav_header{
     position: relative;
     top:50%;
-    margin-left: 10%;
     color: white;
     text-align: left;
-
+}
+.Nav_header2{
+    text-align: center;
+    margin:0 auto;
+    width: 48%;
 }
 .Nav_header h1{
-    font-size: 40px;
+    font-size: 32px;
 }
 .Nav_header h3{
     font-family:Roboto Condensed, sans-serif;
     color: #828282;
 }
+.Nav{
+    text-align: center;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+

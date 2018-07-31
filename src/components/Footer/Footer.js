@@ -5,11 +5,12 @@ import Contact from "../Contact/Contact";
 import Works from "../Works/Works"
 import About from "../About/About"
 import "./Footer.css"
+import logo from "../../media/images/logo.png"
 class Footer extends Component{
  render() {
      return(
          <div className="Footer"> 
-         <img src="logo.png" alt="logo"/>
+         <img src={logo} alt="logo"width="100"/>
           <div className="Footer_links">
           <Link to="/home" Component={Home}>Home</Link>
                 <Link to="/about" Component={About}>About Us</Link>

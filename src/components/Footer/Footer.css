@@ -1,11 +1,14 @@
 .Footer{
     background-color:#141d29;
     color:#828282;
-    padding:5vw;
-
+    padding:7vw; 
+    text-align: center;
+}
+.Footer> img{
+    margin-bottom: 3vw;
 }
 .Footer_links > a{
-    text-decoration-style: none;
+    text-decoration: none;
     color:#828282;
     padding: 4px;
 }
