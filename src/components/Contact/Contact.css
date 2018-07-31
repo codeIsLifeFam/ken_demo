@@ -1,0 +1,48 @@
+.Contact > div{
+    padding:15vw;
+}
+
+.Contact_el-1{
+color: white; 
+background-color: #1b1f25
+}
+.Contact_el-1 article span{
+    color:#828282;
+}
+.Contact_el-1 article span h4{
+    color:white;
+    font-weight: lighter;
+}
+.Contact_el-2{
+    background-color:#f7f7f7;
+}
+.Contact_el-1 article h2 {
+  color : white;
+}
+
+.Contact_el-2 article span{
+   color:#0749be;
+   font-size: 1.3em;
+   margin-right: 10px;
+
+}
+.Contact_el-3{
+    text-align: center;
+    background-color:#424a53 ;
+    color:white;
+}
+.Contact_el-3 h1{
+    font-weight: lighter;
+}
+.Contact_el-3 input{
+    margin-right: 10px;
+    background: transparent;
+    border:0.5px solid #828282;
+    padding:30px;
+}
+.Contact_el-3 button{
+    background-color : #0749be;
+    border: none;
+    color: white;
+    padding:30px;
+}
