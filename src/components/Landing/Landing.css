@@ -1,18 +1,26 @@
 .example-component {
-background-color: #8693ab;
+    background-color: #0749be;
 }
 .example-component-change {
- background-color: #272727;
+    background-color: #141d29;
+
  transition:1s;
 }
 .Landing{
     height: 100vh;
 }
 .Landing_logo{
-    color: white;
-    font-size: 40px;
-    position: relative;
+   font-size: 50px;
+   position: absolute;
+   top:50%;
+   left:48vw;
+   padding: 0;
+   margin:0;
+}
+.Landing_logo-cir{
+    position: absolute;
     top:50%;
+    left:50vw;
     padding: 0;
     margin:0;
 }
