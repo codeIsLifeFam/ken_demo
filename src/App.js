@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
 
         {
-          this.props.history.location.pathname == "/" ?
+          this.props.history.location.pathname === "/" ?
             <Landing />
             :
             <div className="main" >

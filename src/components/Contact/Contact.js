@@ -29,9 +29,9 @@ class Contact extends React.Component {
           <h1>Locatoins</h1>
           <article>
            <h2>New York Office</h2>
-           <span><i class="fas fa-map-marker-alt"></i></span>2500 Branch Oaks ln Flower Mound Tx75028
+           <span><i className="fas fa-map-marker-alt"></i></span>2500 Branch Oaks ln Flower Mound Tx75028
            <br />
-           <span><i class="fas fa-phone"></i></span> 972-997-6586
+           <span><i className="fas fa-phone"></i></span> 972-997-6586
           </article>
         </div>
         <div className="Contact_el-3">

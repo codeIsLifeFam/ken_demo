@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link,withRouter } from "react-router-dom";
 import mainbg from "../../media/images/mainbg.jpg";
 import bg_about from "../../media/images/bg_about.jpg";
 import bg_contact from "../../media/images/bg_contact.jpg";
@@ -9,15 +9,16 @@ import bg_work from "../../media/images/bg_work.jpg"
 import "./Nav.css";
 
 class Nav extends React.Component {
-  state = {
-    bg: mainbg,
-    contentPage: 1
-  };
-  changeBg = (bg, page) => {
-    this.setState({ bg: bg, contentPage: page });
-  };
+  state={
+    "/home": mainbg,
+    "/about":bg_about,
+    "/contact":bg_contact,
+    "/team":bg_team,
+    "/works":bg_work
+  }
   render() {
-    const { bg, contentPage } = this.state;
+    const url = this.props.location.pathname;
+    console.log(url)
     const styles = {
       link: {
         color: "white"
@@ -27,7 +28,7 @@ class Nav extends React.Component {
       <article
         className="Nav_overlay"
         style={{
-          backgroundImage: `url(${bg})`,
+          backgroundImage: `url(${this.state[url]})`,
           backgroundSize: "cover",
           height: "100vh",
           transition:"0.5s"
@@ -40,43 +41,38 @@ class Nav extends React.Component {
             </span>
             <Link
               to="/home"
-              onClick={() => this.changeBg(mainbg, 1)}
-              style={contentPage === 1 ? styles.link : null}
+              style={url === "/home" ? styles.link : null}
             >
               Home
             </Link>
             <Link
               to="/about"
-              onClick={() => this.changeBg(bg_about, 2)}
-              style={contentPage === 2 ? styles.link : null}
+              style={url === "/about" ? styles.link : null}
             >
               About Us
             </Link>
 
             <Link
               to="/works"
-              onClick={() => this.changeBg(bg_work, 4)}
-              style={contentPage === 4 ? styles.link : null}
+              style={url === "/works" ? styles.link : null}
             >
               Our works
             </Link>
             <Link
               to="/team"
-              onClick={() => this.changeBg(bg_team, 5)}
-              style={contentPage === 5 ? styles.link : null}
+              style={url === "/team" ? styles.link : null}
             >
               Our Team
             </Link>
             <Link
               to="/contact"
-              onClick={() => this.changeBg(bg_contact, 3)}
-              style={contentPage === 3 ? styles.link : null}
+              style={url === "/contact" ? styles.link : null}
             >
               Contact
             </Link>
           </div>
           <div className="Nav_header">
-            {contentPage === 2 ? (
+            {url === "/about" ? (
               <div className="Nav_header2">
                 <h3>About Sack's</h3>
                 <h1>
@@ -84,12 +80,12 @@ class Nav extends React.Component {
                   directly to tacos
                 </h1>
               </div>
-            ) : contentPage === 3 ? (
+            ) : url === "/contact" ? (
               <div className="Nav_header3">
                 <h3>Contact Us</h3>
                 <h1>Contact us to learn more about Sack's</h1>
               </div>
-            ) : contentPage === 4 ? (
+            ) : url === "/works" ? (
               <div className="Nav_header4">
                 <h1>We Provide Really Good tacos</h1>
                 <h3>
@@ -97,7 +93,7 @@ class Nav extends React.Component {
                   guaranteed
                 </h3>
               </div>
-            ) : contentPage === 5 ? (
+            ) : url === "/team" ? (
               <div className="Nav_header5">
                 <h3>Team</h3>{" "}
                 <h1>
@@ -120,4 +116,4 @@ class Nav extends React.Component {
     );
   }
 }
-export default Nav;
+export default withRouter(Nav)
