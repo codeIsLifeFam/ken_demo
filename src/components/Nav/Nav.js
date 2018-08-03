@@ -1,24 +1,27 @@
 import React from "react";
-import { Link,withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import mainbg from "../../media/images/mainbg.jpg";
 import bg_about from "../../media/images/bg_about.jpg";
 import bg_contact from "../../media/images/bg_contact.jpg";
 import bg_team from "../../media/images/bg_team.jpg";
 import logo from "../../media/images/logo.png";
-import bg_work from "../../media/images/bg_work.jpg"
+import bg_work from "../../media/images/bg_work.jpg";
 import "./Nav.css";
-
+import  Drawer from './Drawer'
 class Nav extends React.Component {
-  state={
+  state = {
     "/home": mainbg,
-    "/about":bg_about,
-    "/contact":bg_contact,
-    "/team":bg_team,
-    "/works":bg_work
+    "/about": bg_about,
+    "/contact": bg_contact,
+    "/team": bg_team,
+    "/works": bg_work,
+  };
+  burgerSwitch(){
+     this.setState({burgerSwitch:!this.state.burgerSwitch})
   }
   render() {
     const url = this.props.location.pathname;
-    console.log(url)
+    console.log(url);
     const styles = {
       link: {
         color: "white"
@@ -31,46 +34,38 @@ class Nav extends React.Component {
           backgroundImage: `url(${this.state[url]})`,
           backgroundSize: "cover",
           height: "100vh",
-          transition:"0.5s"
+          transition: "0.5s"
         }}
       >
         <div className="Nav">
-          <div className="Nav_links">
+          <div className="Nav_top">
             <span className="Nav_logo">
               <img src={logo} alt="logo" width="170" />
             </span>
-            <Link
-              to="/home"
-              style={url === "/home" ? styles.link : null}
-            >
-              Home
-            </Link>
-            <Link
-              to="/about"
-              style={url === "/about" ? styles.link : null}
-            >
-              About Us
-            </Link>
+            <div className="Nav_links">
+              <Link to="/home" style={url === "/home" ? styles.link : null}>
+                Home
+              </Link>
+              <Link to="/about" style={url === "/about" ? styles.link : null}>
+                About Us
+              </Link>
 
-            <Link
-              to="/works"
-              style={url === "/works" ? styles.link : null}
-            >
-              Our works
-            </Link>
-            <Link
-              to="/team"
-              style={url === "/team" ? styles.link : null}
-            >
-              Our Team
-            </Link>
-            <Link
-              to="/contact"
-              style={url === "/contact" ? styles.link : null}
-            >
-              Contact
-            </Link>
+              <Link to="/works" style={url === "/works" ? styles.link : null}>
+                Our works
+              </Link>
+              <Link to="/team" style={url === "/team" ? styles.link : null}>
+                Our Team
+              </Link>
+              <Link
+                to="/contact"
+                style={url === "/contact" ? styles.link : null}
+              >
+                Contact
+              </Link>
+            </div>
+         <Drawer />
           </div>
+
           <div className="Nav_header">
             {url === "/about" ? (
               <div className="Nav_header2">
@@ -116,4 +111,4 @@ class Nav extends React.Component {
     );
   }
 }
-export default withRouter(Nav)
+export default withRouter(Nav);
