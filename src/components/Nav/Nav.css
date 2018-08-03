@@ -1,48 +1,71 @@
-.Nav_links > a{
-    text-decoration: none;
-    font-size: 1.15em;
-    letter-spacing: 1px;
-   color:#828282;
-   font-family: Roboto Condensed, sans-serif;
-   margin-right: 15px;
-   position: relative;
-   top:100px;
+
+.Nav_links > a {
+  text-decoration: none;
+  font-size: 1.15em;
+  letter-spacing: 1px;
+  color: #828282;
+  font-family: Roboto Condensed, sans-serif;
+  margin-right: 15px;
+  position: relative;
+  top: 30px;
 }
-.Nav_links > a:hover{
-    color:white;
-    transition:0.8s;
+.Nav_links > a:hover {
+  color: white;
+  transition: 0.8s;
 }
-.Nav_logo{
-display: inline-block;
-position: absolute;
-top:6vw;
-left:10vw;
+.Nav_header {
+  position: relative;
+  top: 50%;
+  color: white;
+  text-align: left;
 }
-.Nav_header{
-    position: relative;
-    top:50%;
-    color: white;
-    text-align: left;
-}
-.Nav_header2,.Nav_header3,.Nav_header5{
-    margin:0 auto;
-    width: 48%;
+.Nav_header2,
+.Nav_header3,
+.Nav_header5 {
+  margin: 0 auto;
+  width: 48%;
 }
 
-.Nav_header h1{
-    font-size: 32px;
-    -webkit-animation: fade-in-top 0.8s ease-in-out both;
-    animation: fade-in-top 0.8s ease-in-out both;
+.Nav_header h1 {
+  font-size: 32px;
+  -webkit-animation: fade-in-top 0.8s ease-in-out both;
+  animation: fade-in-top 0.8s ease-in-out both;
 }
-.Nav_header h3{
-    font-family:Roboto Condensed, sans-serif;
-    color: #828282;
+.Nav_header h3 {
+  font-family: Roboto Condensed, sans-serif;
+  color: #828282;
 }
-.Nav{
-    text-align: center;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
+.Nav {
+  text-align: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
+.Nav_logo {
+  display: inline-block;
+  position: relative;
+  top:60px;
+  right: 30%;
+}
+@media only screen and (max-width:1050px) {
+    .Nav_links > a{
+    display: none;
+  }
+}
+@media only screen and (max-width:700px){
+  .Nav_logo{
+    right: 25%;
+  }
+}
+@media only screen and (max-width:480px){
+  .Nav_logo{
+    right: 20%;
+  }
+}
+@media only screen and (max-width:365px){
+  .Nav_logo{
+    right: 15%;
+  }
+}
 
 

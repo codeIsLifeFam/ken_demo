@@ -12,14 +12,14 @@ class About extends React.Component {
           </h2>
           <article>
             We view middle market credit as a core part of a balanced investment
-            portfolio. We created Varagon to provide direct exposure to quality
+            portfolio. We created  to provide direct exposure to quality
             loans with best-in-class underwriting and portfolio management. Our
             business was built on the belief that lenders that lead and
             structure transactions are able to originate the most attractive
             investments.
           </article>
           <h2>
-            Varagon was created to be a long-term provider of capital to the
+             was created to be a long-term provider of capital to the
             middle market
           </h2>
           <article>

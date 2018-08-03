@@ -17,11 +17,11 @@ class Contact extends React.Component {
 
             <span>
               Borrowers & Private Equity
-              <h4>borrowers@varagon.com</h4>
+              <h4>borrowers@Sack's.com</h4>
               Investors 
-              <h4>investors@varagon.com</h4>
+              <h4>investors@Sack's.com</h4>
               General Inquiries
-              <h4>info@varagon.com</h4>
+              <h4>info@Sack's.com</h4>
             </span>
           </article>
         </div>
