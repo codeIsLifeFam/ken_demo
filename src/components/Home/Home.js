@@ -3,9 +3,6 @@ import "./Home.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 class Home extends React.Component {
-  constructor(props){
-    super(props);
-  }
   componentDidMount(){
     AOS.init({
       duration : 1500
@@ -68,7 +65,7 @@ class Home extends React.Component {
           </article>
           <header>
             <h1>Not All Roofers</h1>
-            <hr data-aos='fade-left'/>
+            <hr data-aos='fade-down'/>
             <h2> are the Right Roofers</h2>
             <h3>sub header goes underneath</h3>
           </header>

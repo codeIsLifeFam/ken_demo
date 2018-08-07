@@ -15,7 +15,7 @@
 }
 .Nav_header {
   position: relative;
-  top: 50%;
+  top: 40%;
   color: white;
   text-align: left;
 }
@@ -51,6 +51,15 @@
     .Nav_links > a{
     display: none;
   }
+  .Nav_header {
+    top: 30%;
+  }
+  .Nav_header2 h1{
+   font-size:28px;
+  }
+  .Nav_header5 h1{
+    font-size:28px;
+   }
 }
 @media only screen and (max-width:700px){
   .Nav_logo{
