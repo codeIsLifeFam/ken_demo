@@ -5,9 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 class About extends React.Component {
-  constructor(props){
-    super(props);
-  }
+
   componentDidMount(){
     AOS.init({
       duration : 2000
@@ -41,7 +39,7 @@ class About extends React.Component {
           </article>
         </div>
         <div className="About_el-2">
-          <span data-aos='fade-up'>$4.5B+</span>
+          <span data-aos='fade-up' className="About_blue">$4.5B+</span>
           <h1>Over $4.5 billion investment portfolio</h1>
         </div>
         <hr />
@@ -53,12 +51,12 @@ class About extends React.Component {
           <Link to="/team">Learn more</Link>
         </div>
         <div className="About_el-4">
-          <span data-aos='fade-right'>
-            <span> 20+ years</span>
+          <span data-aos='fade-down'>
+            <span className="About_blue"> 20+ years</span>
             <h3>Average middle market experience of leadership team</h3>
           </span>
-          <span data-aos='fade-left' className="About_el-4_sec">
-            <span >45+</span>
+          <span data-aos='fade-up' className="About_el-4_sec">
+            <span className="About_blue">45+</span>
             <h3>Employees</h3>
           </span>
         </div>
