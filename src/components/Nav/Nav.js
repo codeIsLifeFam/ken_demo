@@ -98,10 +98,9 @@ class Nav extends React.Component {
               </div>
             ) : (
               <div style={{ marginLeft: "10%" }}>
-                <h1>We Provide Really Good tacos</h1>
+                <h1>Commercial Roofing Services</h1>
                 <h3>
-                  Hola my friend, full satisfaction with just one bite
-                  guaranteed
+                 over 20 years in providing services
                 </h3>
               </div>
             )}

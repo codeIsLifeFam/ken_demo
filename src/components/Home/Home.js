@@ -1,6 +1,16 @@
 import React from "react";
 import "./Home.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 class Home extends React.Component {
+  constructor(props){
+    super(props);
+  }
+  componentDidMount(){
+    AOS.init({
+      duration : 1500
+    })
+  }
   render() {
     return (
       <div className="Home">
@@ -8,7 +18,7 @@ class Home extends React.Component {
           <header>
             <h1>A New Roof is NOT Something to Gamble With</h1>
             <h3>sub header goes underneath</h3>
-            <hr />
+            <hr data-aos='fade-right'/>
           </header>
           <article>
             {" "}
@@ -47,7 +57,7 @@ class Home extends React.Component {
               </li>
               <hr />
             </ul>
-            <h2>When your commercial roof needs</h2>
+            <h2  data-aos='fade-right'>When your commercial roof needs</h2>
             to be repaired, you need to hire someone who has experience with the
             complexities of commercial
             {/* roofing. Not all roofers are the same, and hiring an inexperienced
@@ -58,15 +68,15 @@ class Home extends React.Component {
           </article>
           <header>
             <h1>Not All Roofers</h1>
-            <hr />
+            <hr data-aos='fade-left'/>
             <h2> are the Right Roofers</h2>
             <h3>sub header goes underneath</h3>
           </header>
         </div>
         <div className="Home_el-3">
           <header>
-            <h1>Knowing when to Replace Your Roof</h1>
-            <hr />
+            <h1  data-aos='fade-down'>Knowing when to Replace Your Roof</h1>
+            <hr  data-aos='fade-right'/>
           </header>
           <article>
             {" "}
