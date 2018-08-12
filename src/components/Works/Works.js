@@ -6,20 +6,20 @@ class Works extends React.Component{
             <div className="Works">
                  <div className="Works_el-1">
               <h1 className="somecoolheader">
-                 SOME COOL HEADER
+                 DuraLast Certified
                  </h1>
-                 <article>  some cool content goes here blah blah The Center for Information Industry Development (CCID), under China’s Ministry of Industry and Information Technology, officially released its third crypto project ranking last week. The new list consists of 31 crypto projects.The center began ranking 28 crypto projects in May. The following month it added 2 more projects: EOS and Nebulas. This month, one more is added, making a total of 31 crypto projects on the list. Gxchain is the latest addition.</article>
+                 <article>We are one of only 13 certified DuraLast roofing companies in the DFW area. </article>
              </div>
              <div className="Works_el-2">
               <h1 className="somecoolheader">
-             SOME COOL HEADER
+            Build-out
                  </h1>
-                 <article>  some cool content goes here blah blah The Center for Information Industry Development (CCID), under China’s Ministry of Industry and Information Technology, officially released its third crypto project ranking last week. The new list consists of 31 crypto projects.The center began ranking 28 crypto projects in May. The following month it added 2 more projects: EOS and Nebulas. This month, one more is added, making a total of 31 crypto projects on the list. Gxchain is the latest addition.</article>
+                 <article>We provide full build-out services. </article>
              </div>
              <div className="Works_el-3">
-             <h1 className="somecoolheader">SOME COOL HEADER
+             <h1 className="somecoolheader">Finishing services
                  </h1>
-                 <article>  some cool content goes here blah blah The Center for Information Industry Development (CCID), under China’s Ministry of Industry and Information Technology, officially released its third crypto project ranking last week. The new list consists of 31 crypto projects.The center began ranking 28 crypto projects in May. The following month it added 2 more projects: EOS and Nebulas. This month, one more is added, making a total of 31 crypto projects on the list. Gxchain is the latest addition.</article>
+                 <article>When the other contractor leaves you holding the bag, we are there for you. A couple of quick signatures on the ECN and you can consider the work done. any work, any time.</article>
              </div>
             </div>
         )

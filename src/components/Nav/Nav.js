@@ -1,11 +1,11 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-import mainbg from "../../media/images/mainbg.jpg";
-import bg_about from "../../media/images/bg_about.jpg";
+import mainbg from "../../media/images/general-contracting.jpg";
+import bg_about from "../../media/images/roofer1.jpg";
 import bg_contact from "../../media/images/bg_contact.jpg";
-import bg_team from "../../media/images/bg_team.jpg";
+import bg_team from "../../media/images/bg_team2.jpg";
 import logo from "../../media/images/logo.png";
-import bg_work from "../../media/images/bg_work.jpg";
+import bg_work from "../../media/images/duralast2.jpg";
 import "./Nav.css";
 import  Drawer from './Drawer'
 class Nav extends React.Component {
@@ -69,23 +69,21 @@ class Nav extends React.Component {
           <div className="Nav_header">
             {url === "/about" ? (
               <div className="Nav_header2">
-                <h3>About Sack's</h3>
+                <h3>About Sak's</h3>
                 <h1>
-                  Sack's commercial roofing is an asset manager that lends
-                  directly to tacos
+                  Sak's general contracting has been serving the DFW area for over 20 years
                 </h1>
               </div>
             ) : url === "/contact" ? (
               <div className="Nav_header3">
                 <h3>Contact Us</h3>
-                <h1>Contact us to learn more about Sack's</h1>
+                <h1>Contact us to learn more about how Sak's can help you</h1>
               </div>
             ) : url === "/works" ? (
               <div className="Nav_header4">
-                <h1>We Provide Really Good tacos</h1>
+                <h1>We are DuraLast certified</h1>
                 <h3>
-                  Hola my friend, full satisfaction with just one bite
-                  guaranteed
+                  As Sak's we believe DuraLast to be the best rook out there. Guaranteed
                 </h3>
               </div>
             ) : url === "/team" ? (
